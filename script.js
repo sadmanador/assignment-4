@@ -46,7 +46,7 @@ function publicBusFare (passenger) {
     return localBusPeople;
 };
 
-console.log(publicBusFare(225))
+console.log(publicBusFare())
 
 
 //task 5:
@@ -54,6 +54,6 @@ function isBestFriend (person1, person2) {
     let result = '';
     if (person1.name === person2.friend && person1.friend === person2.name) {
         result = true;
-    } else{ result = false}
+    } else { result = false}
     return result
 };
