@@ -24,6 +24,7 @@ function isJavaScriptFile (filename) {
 console.log(isJavaScriptFile(""))
 
 
+
 //task 3:
 function oilPrice (diesel, petrol, octane) {
     let a = 114;
@@ -34,6 +35,21 @@ function oilPrice (diesel, petrol, octane) {
 
 
 //task 4:
-function publicBusFare () {
+function publicBusFare (passenger) {
+    const busCanCarry = 50;
+    const microbusCanCarry = 11;
+    const busFare = 250;
+
+    let passengerForMicro = passenger % busCanCarry;
+    let leftPeople = passengerForMicro % microbusCanCarry;
+    let localBusPeople = leftPeople * busFare;
+    return localBusPeople;
+};
+
+console.log(publicBusFare(225))
+
+
+//task 5:
+function isBestFriend () {
     
 };
