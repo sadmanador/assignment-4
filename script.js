@@ -18,11 +18,10 @@ console.log(radianToDegree(3))
 //task 2:
 function isJavaScriptFile (filename) {
     //result container
-    let result = '';
+    let result;
 
     //jsFile identification
     const jsFile = ".js";
-
     //file name checking condition
     if ( filename.slice(-3) === jsFile){
         result = true
@@ -32,7 +31,7 @@ function isJavaScriptFile (filename) {
     return result;
 }
 
-console.log(isJavaScriptFile(""))
+console.log(isJavaScriptFile("app.js"))
 
 
 
@@ -90,14 +89,14 @@ console.log(publicBusFare(225))
 //data for checking task5
 let person_1 = {name: "John", friend: "Mike"};
 let person_2 = {name: "Mike", friend: "John"};
-let person_3 = "Johan";
+let person_3 = "Johann";
 let person_4 = 1200;
 
 
 
 function isBestFriend (a, b) {
     //result container
-    let result = '';
+    let result;
 
     //error handler
     if (a instanceof Object && b instanceof Object) {
