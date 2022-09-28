@@ -13,23 +13,33 @@ console.log(radianToDegree(8));
 
 
 
+//data for checking task5
+let person_1 = {name: "John", friend: "Mike"};
+let person_2 = {name: "Mike", friend: "John"};
+let person_3 = "Johann";
+let person_4 = 1200;
+
 
 //task 2:
 function isJavaScriptFile (filename) {
-    let value = new String(filename)
+    
 
     //condition checking
     // return filename.endsWith(".js")
-    if (value instanceof String){
-        return filename.endsWith(".js")
-    } 
-    else if (value instanceof Number) {
-        return "Error: please insert string not a number"
-    }
-    else { return "Error: The file name isn't a string type."}
+   if (typeof(filename) == 'string'){
+    return filename.endsWith(".js")
+   } else if (typeof(filename) == 'object'){
+    return "Error: appropriate data type required"
+   } else if (typeof(filename) == 'boolean'){
+    return "Error: appropriate data type required"
+   } else if (typeof(filename) == 'function'){
+    return "Error: appropriate data type required"
+   } else {
+    return "Error: appropriate data type required"
+   }
 
 };
-console.log(isJavaScriptFile(45));
+console.log(isJavaScriptFile(person_3));
 
 
 
@@ -75,15 +85,6 @@ function publicBusFare (passenger) {
 console.log(publicBusFare(65));
 
 
-
-
-
-
-//data for checking task5
-let person_1 = {name: "John", friend: "Mike"};
-let person_2 = {name: "Mike", friend: "John"};
-let person_3 = "Johann";
-let person_4 = 1200;
 
 
 
