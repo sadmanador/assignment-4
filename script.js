@@ -18,28 +18,22 @@ let person_1 = {name: "John", friend: "Mike"};
 let person_2 = {name: "Mike", friend: "John"};
 let person_3 = "Johann";
 let person_4 = 1200;
+let person_5 = ["Salmna", "SRK", "Sanju"];
 
 
 //task 2:
 function isJavaScriptFile (filename) {
     
-
-    //condition checking
-    // return filename.endsWith(".js")
+    //error handling
    if (typeof(filename) == 'string'){
     return filename.endsWith(".js")
-   } else if (typeof(filename) == 'object'){
-    return "Error: appropriate data type required"
-   } else if (typeof(filename) == 'boolean'){
-    return "Error: appropriate data type required"
-   } else if (typeof(filename) == 'function'){
-    return "Error: appropriate data type required"
-   } else {
+   } 
+   else {
     return "Error: appropriate data type required"
    }
 
-};
-console.log(isJavaScriptFile(person_3));
+}
+console.log(isJavaScriptFile(person_5));
 
 
 
