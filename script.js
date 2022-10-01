@@ -9,16 +9,7 @@ function radianToDegree(radian) {
     }
     return radian * degree;
 };
-console.log(radianToDegree(8));
-
-
-
-//data for checking task5
-let person_1 = {name: "John", friend: "Mike"};
-let person_2 = {name: "Mike", friend: "John"};
-let person_3 = "Johann";
-let person_4 = 1200;
-let person_5 = ["Salmna", "SRK", "Sanju"];
+console.log(radianToDegree(5));
 
 
 //task 2:
@@ -27,13 +18,13 @@ function isJavaScriptFile (filename) {
     //error handling
    if (typeof(filename) == 'string'){
     return filename.endsWith(".js")
-   } 
+   }
    else {
     return "Error: appropriate data type required"
    }
 
 }
-console.log(isJavaScriptFile(person_5));
+console.log(isJavaScriptFile("script.css.js"));
 
 
 
@@ -54,7 +45,7 @@ function oilPrice (a, b, c) {
     }
     return totalPrice;
 };
-console.log(oilPrice(12,"asd",5));
+console.log(oilPrice(10,5,2));
 
 
 
@@ -76,7 +67,7 @@ function publicBusFare (passenger) {
     };
     return localBusFare;
 };
-console.log(publicBusFare(65));
+console.log(publicBusFare(60));
 
 
 
@@ -98,4 +89,3 @@ function isBestFriend (a, b) {
     else { return "Error: please insert an valid object."}
 };
 console.log(isBestFriend({name: "John", friend: "Mike"}, {name: "Ador", friend: "John"}));
-
